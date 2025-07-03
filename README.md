@@ -83,31 +83,49 @@ or if ** does not work:
 
 javac -cp . src\model\*.java src\dao\*.java src\util\*.java src\controller\*.java src\view\*.java
 5️⃣ Run the application
-bash
-
 
 
 java -cp src view.LoginView
+
+---
+
+
 🔐 Login Credentials
-Role	Username	Password
-Student	student	1234
-Admin	admin	admin
-Faculty	faculty	faculty
+
+
+Role: Student
+Username: student
+Password: 1234
+
+
+Role: Admin
+Username: admin
+Password: admin
+
+
+Role: Faculty
+Username: faculty
+Password: faculty
+
 
 📋 Notes
+
 Requires MySQL Connector/J (JDBC driver).
 
 Download: MySQL Connector/J
 
 Include the .jar in your classpath when compiling & running.
 
+
+
 Example:
-
-
 
 javac -cp ".;mysql-connector-java-8.x.x.jar" src/**/*.java
 java -cp ".;src;mysql-connector-java-8.x.x.jar" view.LoginView
 Database name: crs
+
+
+---
 
 🙌 Contributors
 ✍️ Janeesha Dewmini
