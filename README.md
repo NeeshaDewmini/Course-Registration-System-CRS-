@@ -46,15 +46,16 @@ README.md
 ## 🚀 Setup & Run
 
 ### 1️⃣ Clone the repository
-```bash
+
 git clone <your-repo-url>
 cd <your-project-folder>
 
 
 
-2️⃣ Set up the database
-Start MySQL server
+###2️⃣ Set up the database
 
+
+Start MySQL server
 Log in to MySQL:
 
 
@@ -64,33 +65,34 @@ Create & populate the database:
 
 SOURCE database/crs_schema.sql;
 SOURCE database/sample_data.sql;
-3️⃣ Configure database credentials
+
+
+###3️⃣ Configure database credentials
 In src/util/DBConnection.java, update:
 
 
 private static final String USER = "your_mysql_username";
 private static final String PASSWORD = "your_mysql_password";
+
+
 4️⃣ Compile the project
+
+
 From project root:
-
-
 javac -cp . src/**/*.java
+
 or if ** does not work:
-
-
-
-
-
 javac -cp . src\model\*.java src\dao\*.java src\util\*.java src\controller\*.java src\view\*.java
-5️⃣ Run the application
 
+
+5️⃣ Run the application
 
 java -cp src view.LoginView
 
 ---
 
 
-🔐 Login Credentials
+## 🔐 Login Credentials
 
 
 Role: Student
@@ -108,7 +110,7 @@ Username: faculty
 Password: faculty
 
 
-📋 Notes
+## 📋 Notes
 
 Requires MySQL Connector/J (JDBC driver).
 
@@ -127,6 +129,6 @@ Database name: crs
 
 ---
 
-🙌 Contributors
+## 🙌 Contributors
 ✍️ Janeesha Dewmini
 
