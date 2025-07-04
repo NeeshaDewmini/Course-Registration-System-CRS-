@@ -20,14 +20,32 @@ A simple Java-based **Course Registration System** built using **MVC architectur
 
 ## 🏗️ Project Structure
 src/
+
+
 ├── model/ # Data classes (Student, Course, Enrollment)
+
+
 ├── dao/ # Database access layer (CRUD for Students & Courses)
+
+
 ├── controller/ # Business logic & rules (prerequisites, capacity)
+
+
 ├── view/ # User interface (Swing)
+
+
 ├── util/ # DB connection helper
+
+
 database/
+
+
 ├── crs_schema.sql # Database schema
+
+
 ├── sample_data.sql # Sample data for testing
+
+
 README.md
 
 
@@ -51,31 +69,31 @@ git clone <your-repo-url>
 cd <your-project-folder>
 
 
-
-###2️⃣ Set up the database
+### 2️⃣ Set up the database
 
 
 Start MySQL server
+
 Log in to MySQL:
-
-
 mysql -u root -p
-Create & populate the database:
 
+
+Create & populate the database:
 
 SOURCE database/crs_schema.sql;
 SOURCE database/sample_data.sql;
 
 
-###3️⃣ Configure database credentials
-In src/util/DBConnection.java, update:
+### 3️⃣ Configure database credentials
 
+
+In src/util/DBConnection.java, update:
 
 private static final String USER = "your_mysql_username";
 private static final String PASSWORD = "your_mysql_password";
 
 
-4️⃣ Compile the project
+### 4️⃣ Compile the project
 
 
 From project root:
@@ -85,7 +103,7 @@ or if ** does not work:
 javac -cp . src\model\*.java src\dao\*.java src\util\*.java src\controller\*.java src\view\*.java
 
 
-5️⃣ Run the application
+### 5️⃣ Run the application
 
 java -cp src view.LoginView
 
